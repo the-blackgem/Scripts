@@ -14,4 +14,4 @@ subprocess.call(["ifconfig", interface, "hw", "ether", new_mac])
 subprocess.call(["ifconfig", interface, "up", new_mac])
 
 print ("Done!")
-subprocess.call("ifconfig en0", shell=True)
+subprocess.call("ifconfig" + interface, shell=True)
